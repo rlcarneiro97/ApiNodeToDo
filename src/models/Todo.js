@@ -1,7 +1,7 @@
 const mongoose = require("mongoose")
 const mongoosePaginate = require("mongoose-paginate")
 
-const ProductSchema = new mongoose.Schema({
+const TodoSchema = new mongoose.Schema({
     
     title:{
         type: String,
@@ -13,11 +13,6 @@ const ProductSchema = new mongoose.Schema({
         required: true,
     },
 
-    url:{
-        type: String,
-        required: true,
-    },
-
     createdAt:{
         type: Date,
         default: Date.now,
@@ -25,6 +20,6 @@ const ProductSchema = new mongoose.Schema({
 })
 
 //apontar que esse schema usa paginacao
-ProductSchema.plugin(mongoosePaginate)
+TodoSchema.plugin(mongoosePaginate)
 //criando schema de Product
-mongoose.model("Product", ProductSchema)
+mongoose.model("Todo", TodoSchema)
