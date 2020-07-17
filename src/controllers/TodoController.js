@@ -6,7 +6,7 @@ module.exports = {
     //lista TODOs com paginacao
     async index(req, res){
         const {page = 1} = req.query
-        const todo = await Todo.paginate({}, {page, limit: 3})
+        const todo = await Todo.paginate({}, {page, limit: 5})
         return res.json(todo)
     },
 
