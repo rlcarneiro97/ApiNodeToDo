@@ -3,6 +3,7 @@ const routes = express.Router()
 const TodoController = require("./controllers/TodoController")
 
 //rotas para manipulacao de um TODO
+routes.get("/", TodoController.welcome)
 routes.get("/todo", TodoController.index)
 routes.get("/todo/:id", TodoController.show)
 routes.post("/todo", TodoController.store)
