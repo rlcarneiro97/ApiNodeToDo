@@ -2,12 +2,7 @@ const mongoose = require("mongoose")
 const Todo = mongoose.model("Todo")
 
 module.exports = {
-
-    welcome(req, res){
-        console.log("Bem Vindo ao TodoList-API!")
-        return res.send()
-    },
-
+    
     //lista TODOs com paginacao
     async index(req, res){
         const {page = 1} = req.query
