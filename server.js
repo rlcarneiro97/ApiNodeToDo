@@ -21,4 +21,4 @@ requireDir("./src/models")
 //rota raiz da aplicacao
 app.use("/", require("./src/routes"))
 //api ouvindo a porta 3000 
-app.listen(process.env.PORT || 3000)
+app.listen(process.env.PORT || 3001)
