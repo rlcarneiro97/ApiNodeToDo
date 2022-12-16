@@ -11,7 +11,7 @@ app.use(express.json())
 app.use(cors())
 //conectando ao mongodb e verificando se vem ou nao erro.
 //endereco para teste local = "mongodb://localhost:27017/todolist"
-mongoose.connect(process.env.MONGO_URL || process.env.MONGO_LOCAL_HOST, {useUnifiedTopology:true, useNewUrlParser: true, useCreateIndex: true})
+mongoose.connect(process.env.MONGO_LOCAL_HOST, {useUnifiedTopology:true, useNewUrlParser: true, useCreateIndex: true})
 const db = mongoose.connection
 db.on("Error", console.error.bind(console, "connection error: "))
 db.once("open", function(){})
@@ -21,4 +21,4 @@ requireDir("./src/models")
 //rota raiz da aplicacao
 app.use("/", require("./src/routes"))
 //api ouvindo a porta 3000 
-app.listen(process.env.PORT || 3001)
+app.listen(process.env.PORT || 3000)

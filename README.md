@@ -1,11 +1,25 @@
-## Available Scripts
+## Scripts Disponíveis:
+
+### `.env`
+
+Extraia o arquivo .env do arquivo .env.rar na pasta raíz do projeto.
+
+### `yarn install`
+
+Abra um terminal na pasta do projeto instale as dependências necessárias com o comando: 
+
+```yarn install```
+
+### `FrontReactToDo`
+
+Lembre-se de rodar o Front-End "FrontReactToDo"! Você encontra ele nesse link:
+
+[https://github.com/rlcarneiro97/FrontReactToDo](https://github.com/rlcarneiro97/FrontReactToDo)
 
 ### `yarn dev`
 
-Roda a API com o nodemon e MongoDB. Não esquecer de instalar as dependencias com o "yarn install".
-Abra [http://localhost:3000](http://localhost:3000) Para ver no navegador.
-Se quiser testar as requisicoes, é só usar o Insomnia ou similar.
+No mesmo terminal, rode a API com o Nodemon e MongoDB a partir do comando: 
 
-### `yarn start`
+```yarn dev``` 
 
-Roda a API sem o nodemon.
+Use esse link [http://localhost:3000](http://localhost:3000) para abrir no navegador ou testar as requisições no Postman, Insomnia ou afins.
